@@ -1,9 +1,12 @@
 # Canny Edge Detection
-Canny edge detection algorithm is a widely used technique for identifying edges in images. Its efficiency and accuracy make it a crucial tool in applications such as lane detection, object recognition, image segmentation and more.
+Canny edge detection is an image processing method used to detect edges in an im-
 
-The Canny edge detection algorithm is structured as a multi-stage process, each step essential for producing clean and continuous edges. Its steps are:
-# 1) Noise Reduction Using a Gaussian Filter
-To prevent false detection caused by image noise, the algorithm first applies a Gaussian blur. This smoothes out minor intensity variations making true edges more prominent.
+age while suppressing noise.It extracts useful structural information from different
 
-The Gaussian kernel used is typically 5×55×5 with a standard deviation (σσ) of 1.4
-The kernel must be normalized so its values sum to 1.
+vision objects and dramatically reduce the amount of data to be processed. It has been
+
+widely applied in various computer vision systems. Canny has found that the
+
+requirements for the application of edge detection on diverse vision systems are
+
+relatively similar.
