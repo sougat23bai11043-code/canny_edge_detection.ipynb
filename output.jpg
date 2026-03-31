@@ -1,13 +1,10 @@
-import cv2
-img = cv2.imread("image.jpg")
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-blur = cv2.GaussianBlur(gray, (5,5), 1.4)
-
-import numpy as np
-
-gx = cv2.Sobel(blur, cv2.CV_64F, 1, 0, ksize=3)
-gy = cv2.Sobel(blur, cv2.CV_64F, 0, 1, ksize=3)
-
-magnitude = np.sqrt(gx**2 + gy**2)
-direction = np.arctan2(gy, gx)
+canny_output/
+ ├── bicycle/
+ │    ├── img1_grad_mag.jpg
+ │    ├── img2_grad_dir.jpg
+ │    ├── img3_thinned.jpg
+ │    ├── img4_final_output.jpg
+ ├── bird/
+ ├── dog/
+ ├── einstein/
+ ├── plane/
