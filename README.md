@@ -1,97 +1,71 @@
-# 📌 Implementation of Canny Edge Detection using OpenCV in Python
+# Canny Edge Detection using OpenCV
 
-## 📖 Description  
-This project implements the Canny Edge Detection algorithm, a widely used technique in computer vision for detecting edges in images. It identifies object boundaries by detecting intensity changes in the image.
+## Description
+This project focuses on detecting edges in images using the Canny Edge Detection algorithm. Edge detection is an important concept in image processing, as it helps in identifying object boundaries and important features in an image.
 
-The algorithm follows a multi-stage process to produce accurate and noise-free edge detection results.
-
----
-
-## 🎯 Objectives  
-- To detect edges in images using the Canny algorithm  
-- To understand basic image processing techniques  
-- To build a command-line executable project  
+In this project, an input image is taken, processed using OpenCV, and the edges are extracted and saved as an output image.
 
 ---
 
-## ⚙️ Features  
-- Converts image to grayscale  
-- Applies Gaussian blur for noise reduction  
-- Detects edges using Canny algorithm  
-- Saves output image automatically  
-- Simple command-line interface  
+## Objective
+The main objective of this project is to understand how edge detection works and to implement it using Python and OpenCV.
 
 ---
 
-## 🛠️ Tech Stack  
+## Tools Used
 - Python  
 - OpenCV  
 - NumPy  
 
 ---
 
-## 📂 Project Structure  
-canny-edge-detection/  
-│── main.py  
-│── README.md  
-│── requirements.txt  
-│── sample_images/  
-│     └── input.jpg  
-│── output/  
-│     └── edges.jpg  
+## Project Structure
+canny-edge-detection  
+- main.py  
+- requirements.txt  
+- README.md  
+- sample_images/  
+- output/  
 
 ---
 
-## ⚡ Installation  
+## How to Run
 
+1. Clone the repository  
 git clone https://github.com/your-username/canny-edge-detection  
+
+2. Go to the project folder  
 cd canny-edge-detection  
+
+3. Install dependencies  
 pip install -r requirements.txt  
 
----
-
-## ▶️ Usage  
-
+4. Run the program  
 python main.py --image sample_images/input.jpg  
 
 ---
 
-## 📸 Output  
+## Output
+After running the code, the output image will be saved in the output folder.
 
-output/  
- └── edges.jpg  
-
-- edges.jpg → Final edge-detected image  
-
-(Optional)  
-
-output/  
- ├── original.jpg  
- └── edges.jpg  
+- edges.jpg → contains the detected edges  
+- (optional) original.jpg → input image for comparison  
 
 ---
 
-## 🧠 Algorithm Steps  
-
-1. Noise Reduction (Gaussian Blur)  
-2. Gradient Calculation (Sobel Operator)  
-3. Non-Maximum Suppression  
-4. Double Thresholding  
-5. Edge Tracking by Hysteresis  
-
----
-
-## ⚠️ Important Notes  
-- Ensure correct image path is provided  
-- Run the project from command line  
-- Output is automatically saved in output folder  
+## Working
+The program follows these basic steps:
+- Convert image to grayscale  
+- Apply Gaussian blur to remove noise  
+- Detect edges using Canny algorithm  
+- Save the output image  
 
 ---
 
-## 📌 Conclusion  
-This project demonstrates how edge detection can be performed using the Canny algorithm. It highlights key concepts of image processing and computer vision.
+## Note
+Make sure the image path is correct before running the program. The output folder will be created automatically if it does not exist.
 
 ---
 
-## 👨‍💻 Author  
+## Author
 Sougat (23BAI11043)
