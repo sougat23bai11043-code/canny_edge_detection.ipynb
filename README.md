@@ -33,7 +33,7 @@ to strong edges will be re- moved. I performed this using DFS technique.
 
 # Output and Intermediate Image format :
 
-1. Gradient Magnitue
+1. Gradient Magnitude
 2. Gradient Direction
 3. Thinned Image
 4. Canny Output
