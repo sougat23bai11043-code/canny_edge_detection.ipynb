@@ -1,41 +1,97 @@
-# Canny Edge Detection
-Canny edge detection is an image processing method used to detect edges in an im-
-age while suppressing noise.It extracts useful structural information from different
-vision objects and dramatically reduce the amount of data to be processed. It has been
-widely applied in various computer vision systems. Canny has found that the
-requirements for the application of edge detection on diverse vision systems are
-relatively similar.
+# 📌 Implementation of Canny Edge Detection using OpenCV in Python
 
-It involves following steps :-
+## 📖 Description  
+This project implements the Canny Edge Detection algorithm, a widely used technique in computer vision for detecting edges in images. It identifies object boundaries by detecting intensity changes in the image.
 
-1. Noise reduction
-2. Gradient calculation
-3. Non-maximum suppression
-4. Double threshold
-5. Edge Tracking by Hysteres
-   
-It is also known as the optimal edge detector :
+The algorithm follows a multi-stage process to produce accurate and noise-free edge detection results.
 
-1. The first criterion should have low error rate and filter out unwanted
-information while the useful information preserve.
+---
 
-2. The second criterion is to keep the lower variation as possible between the
-original image and the processed image.
+## 🎯 Objectives  
+- To detect edges in images using the Canny algorithm  
+- To understand basic image processing techniques  
+- To build a command-line executable project  
 
-3. Third criterion removes multiple responses to an edge.
+---
 
-   
-First of all convert the image to gray-scale. Perform a Gaussian blur on the
-image.The gradients can be determined by using a Sobel filter. The image magnitude
-produced re- sults in thick edges. Ideally, the final image should have thin edges. Thus,
-we must perform non maximum suppression to thin out the edges.After that I
-performed an edge tracking algorithm to remove weak edges. Weak edges that are
-connected to strong edges will be actual/real edges. Weak edges that are not connected
-to strong edges will be re- moved. I performed this using DFS technique.
+## ⚙️ Features  
+- Converts image to grayscale  
+- Applies Gaussian blur for noise reduction  
+- Detects edges using Canny algorithm  
+- Saves output image automatically  
+- Simple command-line interface  
 
-# Output and Intermediate Image format :
+---
 
-1. Gradient Magnitude
-2. Gradient Direction
-3. Thinned Image
-4. Canny Output
+## 🛠️ Tech Stack  
+- Python  
+- OpenCV  
+- NumPy  
+
+---
+
+## 📂 Project Structure  
+canny-edge-detection/  
+│── main.py  
+│── README.md  
+│── requirements.txt  
+│── sample_images/  
+│     └── input.jpg  
+│── output/  
+│     └── edges.jpg  
+
+---
+
+## ⚡ Installation  
+
+git clone https://github.com/your-username/canny-edge-detection  
+cd canny-edge-detection  
+pip install -r requirements.txt  
+
+---
+
+## ▶️ Usage  
+
+python main.py --image sample_images/input.jpg  
+
+---
+
+## 📸 Output  
+
+output/  
+ └── edges.jpg  
+
+- edges.jpg → Final edge-detected image  
+
+(Optional)  
+
+output/  
+ ├── original.jpg  
+ └── edges.jpg  
+
+---
+
+## 🧠 Algorithm Steps  
+
+1. Noise Reduction (Gaussian Blur)  
+2. Gradient Calculation (Sobel Operator)  
+3. Non-Maximum Suppression  
+4. Double Thresholding  
+5. Edge Tracking by Hysteresis  
+
+---
+
+## ⚠️ Important Notes  
+- Ensure correct image path is provided  
+- Run the project from command line  
+- Output is automatically saved in output folder  
+
+---
+
+## 📌 Conclusion  
+This project demonstrates how edge detection can be performed using the Canny algorithm. It highlights key concepts of image processing and computer vision.
+
+---
+
+## 👨‍💻 Author  
+Sougat (23BAI11043)
