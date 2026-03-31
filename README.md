@@ -12,7 +12,7 @@ It involves following steps :
 4. Double threshold
 5. Edge Tracking by Hysteres
    
-#It is also known as the optimal edge detector :
+It is also known as the optimal edge detector :
 
 1. The first criterion should have low error rate and filter out unwanted
 information while the useful information preserve.
